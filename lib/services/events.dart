@@ -79,7 +79,7 @@ class Event {
 
   void executeSqlQuery(String q) async {
     Connection conn = await connectToDatabase();
-    await conn.execute(q, parameters: {'id': id});
+    await conn.execute(Sql.named(q), parameters: {'id': id});
     await conn.close();
   }
 }
