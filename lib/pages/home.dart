@@ -140,7 +140,7 @@ class _HomeState extends State<Home> {
                           child: CircleAvatar(
                               radius: event.website == 'meetup' ? 16.0 : 14.0,
                               backgroundColor: bgColor,
-                              backgroundImage: AssetImage('assets/f${event.website}.png')
+                              backgroundImage: AssetImage('assets/${event.website}.png')
                           ),
                         ),
                         const SizedBox(height: 4.0),
